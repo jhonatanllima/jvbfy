@@ -2,16 +2,21 @@ import React from 'react';
 
 import {
   Header,
+  Board,
+  Card, 
+  List,
 } from '../../Components';
 
-import { Container } from './styles';
+
 
 const Main = () => {
   return (
-    <Container>
+    <>
       <Header />
-      
-    </Container>
+      <Board />
+      <Card />
+      <List />      
+    </>
   );
 };
 

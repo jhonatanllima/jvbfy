@@ -1,11 +1,16 @@
 import React from 'react';
 
+import List from '../List';
+
 import {Container} from './styles';
 
-export default function Header(){
+export default function Board(){
   return(
     <Container> 
-      <h1>JVBFy</h1>
+      <List />
+      <List />
+      <List />
+      <List />
     </Container>
   );
 }
