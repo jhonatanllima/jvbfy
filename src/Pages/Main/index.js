@@ -3,8 +3,6 @@ import React from 'react';
 import {
   Header,
   Board,
-  Card, 
-  List,
 } from '../../Components';
 
 
@@ -14,8 +12,7 @@ const Main = () => {
     <>
       <Header />
       <Board />
-      <Card />
-      <List />      
+  
     </>
   );
 };
