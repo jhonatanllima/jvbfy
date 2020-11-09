@@ -5,7 +5,7 @@ import {Container} from './styles';
 export default function Header(){
   return(
     <Container> 
-      <h1>JVLFy</h1>
+      <h1>JVL</h1>
     </Container>
   );
 }
