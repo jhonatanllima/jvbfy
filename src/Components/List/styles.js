@@ -4,6 +4,7 @@ export const Container = styled.div`
   padding: 0 15px; /**espaçamento interno nas laterais de 15px */
   height: 100%; /**altura de 100% */
   flex: 0 0 320px; /** união de flex grow habilidade de esticar mais do que o necessário, flex-shrink possibilidade do elemento reduzir e flex-basis determina o tamanho base desse elemento */
+  opacity: ${props => props.done ? 0.6 : 1};
 
   & + div{/**todo elemento que precede o primeiro pega essa estilização, toda div que tem antes dela outra div */
     border-left: 1px solid rgba(0,0,0,0.2); /** uma borda solida a esquerda com 5% de opacidade */    
