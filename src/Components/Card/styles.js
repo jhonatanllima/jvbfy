@@ -8,9 +8,18 @@ export const Container = styled.div`
   padding: 15px; /** espaçamento interno de 15px em todo o conteúdo */
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8); /** sombra de 1px  4px de blur*/
   border-top: 20px solid rgba(230, 236, 245, 0.4); /** borda do topo, solida (bruta) rgba pois precisa de opacidade */
+  cursor:grab; /** aquela mãozinha de arrastar */
 
   header{
+    top: -22px;
+    left: 15px;
     position: absolute; /** o card é relativo */
+
+  }
+
+  p{
+    font-weight: 500;
+    line-height: 20px;
   }
 
   img{
@@ -23,6 +32,11 @@ export const Container = styled.div`
 `;
 
 export const Label = styled.span`
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
 
+  display:inline-block;
 
+  background: ${props => props.color}; /** recebo por propriedade a color do card no index.js */
 `;
